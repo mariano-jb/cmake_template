@@ -48,8 +48,6 @@ include_directories("${PROJECT_MIDDLEWARES_INCLUDE_DIR}/drivers")
 add_subdirectory(${PROJECT_DOCUMENTATION_DIR})
 add_subdirectory(${PROJECT_HAL_SOURCE_DIR})
 
-add_subdirectory(${PROJECT_SOURCE_MQTT_DIR})
-
 add_executable(	${BINELF} 
 		${PROJECT_ASSEMBLER_SOURCE_DIR}/startup_stm32f407xx.s 
 		${PROJECT_MIDDLEWARES_INCLUDE_DIR}/drivers/sd_diskio.c 
